@@ -1,0 +1,67 @@
+D:\Github\ManagementSale\Management\Management\bin\Release\Resources\AddTab.dll
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\ComNo.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Company.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Customers.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Employee.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\IconDep\Circle_Orange.ico
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\ImportOrder.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Liabilities.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Order.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Product.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Promotion.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Report.ico
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\SalariesReport.png
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\Unit.ico
+D:\Github\ManagementSale\Management\Management\bin\Release\Icons\User.ico
+D:\Github\ManagementSale\Management\Management\bin\Release\Commons\templateImport\Import Customer.xls
+D:\Github\ManagementSale\Management\Management\bin\Release\Commons\templateImport\Import Product.xls
+D:\Github\ManagementSale\Management\Management\bin\Release\TempImport\Import % Tinh Luong.xls
+D:\Github\ManagementSale\Management\Management\bin\Release\TempImport\Them Khach Hang.xls
+D:\Github\ManagementSale\Management\Management\bin\Release\TempImport\THEM SP.xls
+D:\Github\ManagementSale\Management\Management\bin\Release\Management.exe.config
+D:\Github\ManagementSale\Management\Management\bin\Release\Management.exe
+D:\Github\ManagementSale\Management\Management\bin\Release\Management.pdb
+D:\Github\ManagementSale\Management\Management\bin\Release\AddTab.dll
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Commons.Popup.frmCommonError.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Partner.uctPartnerManager.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Customers.frmImportCustomers.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Custommer.uctCustommerManager.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.frmConfig.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.frmLogon.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.frmMain.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.frmShowPrint.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Human.frmImportSalaryPercents.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Human.uctDemo.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Human.uctExportSalary.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Human.uctHumanManager.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Human.uctReportRevenueEmp.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctViewLog.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.frmVendorReturnProduct.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.frmCreatNewImport.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.frmEditOrders.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.frmImportFromExcel.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.frmInventory.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.frmNewOrders.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.frmReturnProduct.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.UnitManager.frmUnit.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctDeleteOrder.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctImportOrder.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctImportReport.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctLiabilities.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctLiabilitiesCompany.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctOrders.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctProducts.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctPromotion.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Products.uctPromotionAddEdit.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Human.uctReportRevenue.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Properties.Resources.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Reports.Installer1.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Reports.rptOrders.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Salaries.frmEmpSalary.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.frmSalary.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.Salaries.frmSalaryPercents.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.uctExportSalaries.resources
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.csproj.GenerateResource.Cache
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.exe.licenses
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.exe
+D:\Github\ManagementSale\Management\Management\obj\Release\Management.pdb

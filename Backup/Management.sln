@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management", "Management\Management.csproj", "{5AB96C26-9BAB-40E9-B4D4-9B35560BAA62}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetUp", "SetUp\SetUp.vdproj", "{3735F748-FDAB-4333-841D-13CBE27F517C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AB96C26-9BAB-40E9-B4D4-9B35560BAA62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB96C26-9BAB-40E9-B4D4-9B35560BAA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB96C26-9BAB-40E9-B4D4-9B35560BAA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB96C26-9BAB-40E9-B4D4-9B35560BAA62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3735F748-FDAB-4333-841D-13CBE27F517C}.Debug|Any CPU.ActiveCfg = Debug
+		{3735F748-FDAB-4333-841D-13CBE27F517C}.Debug|Any CPU.Build.0 = Debug
+		{3735F748-FDAB-4333-841D-13CBE27F517C}.Release|Any CPU.ActiveCfg = Release
+		{3735F748-FDAB-4333-841D-13CBE27F517C}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AB96C26-9BAB-40E9-B4D4-9B35560BAA62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Management</RootNamespace>
+    <AssemblyName>Management</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Elite Captain Black.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AddTab, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.BonusSkins.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v10.2.Core, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.OfficeSkins.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v10.2.Core, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.PivotGrid.v10.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v10.2.Core, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.RichEdit.v10.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPivotGrid.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraReports.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraRichEdit.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v10.2, Version=10.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commons\Common.cs" />
+    <Compile Include="Commons\POPUP\frmCommonError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commons\POPUP\frmCommonError.Designer.cs">
+      <DependentUpon>frmCommonError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commons\SettingCodeDB.cs" />
+    <Compile Include="Commons\SQL\clsBackupDataBase.cs" />
+    <Compile Include="Commons\SQL\clsError.cs" />
+    <Compile Include="Commons\SQL\clsExecSQL.cs" />
+    <Compile Include="Commons\SQL\QryData.cs" />
+    <Compile Include="Commons\SQL\QryParam.cs" />
+    <Compile Include="Company\uctPartnerManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Company\uctPartnerManager.designer.cs">
+      <DependentUpon>uctPartnerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\frmImportCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\frmImportCustomers.Designer.cs">
+      <DependentUpon>frmImportCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\uctCustommerManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customers\uctCustommerManager.designer.cs">
+      <DependentUpon>uctCustommerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogon.Designer.cs">
+      <DependentUpon>frmLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowPrint.Designer.cs">
+      <DependentUpon>frmShowPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human\frmImportSalaryPercents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Human\frmImportSalaryPercents.Designer.cs">
+      <DependentUpon>frmImportSalaryPercents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human\uctDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Human\uctDemo.Designer.cs">
+      <DependentUpon>uctDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human\uctExportSalary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Human\uctExportSalary.designer.cs">
+      <DependentUpon>uctExportSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human\uctHumanManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Human\uctHumanManager.Designer.cs">
+      <DependentUpon>uctHumanManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human\uctReportRevenueEmp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Human\uctReportRevenueEmp.designer.cs">
+      <DependentUpon>uctReportRevenueEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogData\uctViewLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogData\uctViewLog.Designer.cs">
+      <DependentUpon>uctViewLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmVendorReturnProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmVendorReturnProduct.Designer.cs">
+      <DependentUpon>frmVendorReturnProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmAddNewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmAddNewProduct.Designer.cs">
+      <DependentUpon>frmAddNewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmChangeProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmChangeProduct.Designer.cs">
+      <DependentUpon>frmChangeProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmCreatNewImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmCreatNewImport.Designer.cs">
+      <DependentUpon>frmCreatNewImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmEditOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmEditOrders.Designer.cs">
+      <DependentUpon>frmEditOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmImportFromExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmImportFromExcel.Designer.cs">
+      <DependentUpon>frmImportFromExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmInventory.Designer.cs">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmNewOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmNewOrders.Designer.cs">
+      <DependentUpon>frmNewOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmReturnProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\frmReturnProduct.Designer.cs">
+      <DependentUpon>frmReturnProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\frmUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\frmUnit.Designer.cs">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctImportOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctImportOrder.Designer.cs">
+      <DependentUpon>uctImportOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctImportReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctImportReport.Designer.cs">
+      <DependentUpon>uctImportReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctLiabilities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctLiabilities.Designer.cs">
+      <DependentUpon>uctLiabilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctLiabilitiesCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctLiabilitiesCompany.Designer.cs">
+      <DependentUpon>uctLiabilitiesCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctOrders.Designer.cs">
+      <DependentUpon>uctOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctProducts.Designer.cs">
+      <DependentUpon>uctProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctPromotion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctPromotion.Designer.cs">
+      <DependentUpon>uctPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctPromotionAddEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctPromotionAddEdit.Designer.cs">
+      <DependentUpon>uctPromotionAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\uctReportRevenue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Products\uctReportRevenue.designer.cs">
+      <DependentUpon>uctReportRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Commons\POPUP\frmCommonError.resx">
+      <DependentUpon>frmCommonError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\uctPartnerManager.resx">
+      <DependentUpon>uctPartnerManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\frmImportCustomers.resx">
+      <DependentUpon>frmImportCustomers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\uctCustommerManager.resx">
+      <DependentUpon>uctCustommerManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogon.resx">
+      <DependentUpon>frmLogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowPrint.resx">
+      <DependentUpon>frmShowPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human\frmImportSalaryPercents.resx">
+      <DependentUpon>frmImportSalaryPercents.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human\uctDemo.resx">
+      <DependentUpon>uctDemo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human\uctExportSalary.resx">
+      <DependentUpon>uctExportSalary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human\uctHumanManager.resx">
+      <DependentUpon>uctHumanManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Human\uctReportRevenueEmp.resx">
+      <DependentUpon>uctReportRevenueEmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogData\uctViewLog.resx">
+      <DependentUpon>uctViewLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmVendorReturnProduct.resx">
+      <DependentUpon>frmVendorReturnProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmAddNewProduct.resx">
+      <DependentUpon>frmAddNewProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmChangeProduct.resx">
+      <DependentUpon>frmChangeProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmCreatNewImport.resx">
+      <DependentUpon>frmCreatNewImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmEditOrders.resx">
+      <DependentUpon>frmEditOrders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmImportFromExcel.resx">
+      <DependentUpon>frmImportFromExcel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmInventory.resx">
+      <DependentUpon>frmInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmNewOrders.resx">
+      <DependentUpon>frmNewOrders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmReturnProduct.resx">
+      <DependentUpon>frmReturnProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\frmUnit.resx">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctImportOrder.resx">
+      <DependentUpon>uctImportOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctImportReport.resx">
+      <DependentUpon>uctImportReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctLiabilities.resx">
+      <DependentUpon>uctLiabilities.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctLiabilitiesCompany.resx">
+      <DependentUpon>uctLiabilitiesCompany.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctOrders.resx">
+      <DependentUpon>uctOrders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctProducts.resx">
+      <DependentUpon>uctProducts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctPromotion.resx">
+      <DependentUpon>uctPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctPromotionAddEdit.resx">
+      <DependentUpon>uctPromotionAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\uctReportRevenue.resx">
+      <DependentUpon>uctReportRevenue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Installer1.resx">
+      <DependentUpon>Installer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptOrders.resx">
+      <DependentUpon>rptOrders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salaries\frmEmpSalary.resx">
+      <DependentUpon>frmEmpSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salaries\frmSalary.resx">
+      <DependentUpon>frmSalary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salaries\frmSalaryPercents.resx">
+      <DependentUpon>frmSalaryPercents.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salaries\uctExportSalaries.resx">
+      <DependentUpon>uctExportSalaries.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Commons\templateImport\Import Customer.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Commons\templateImport\Import Product.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsOrders.xsc">
+      <DependentUpon>dsOrders.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsOrders.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrders.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsOrders.xss">
+      <DependentUpon>dsOrders.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\dsOrders.cs">
+      <DependentUpon>dsOrders.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\dsOrders.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Installer1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Installer1.Designer.cs">
+      <DependentUpon>Installer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptOrders.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptOrders.Designer.cs">
+      <DependentUpon>rptOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salaries\frmEmpSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salaries\frmEmpSalary.Designer.cs">
+      <DependentUpon>frmEmpSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salaries\frmSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salaries\frmSalary.designer.cs">
+      <DependentUpon>frmSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salaries\frmSalaryPercents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salaries\frmSalaryPercents.Designer.cs">
+      <DependentUpon>frmSalaryPercents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salaries\uctExportSalaries.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Salaries\uctExportSalaries.Designer.cs">
+      <DependentUpon>uctExportSalaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utcLogon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="utcLogon.Designer.cs">
+      <DependentUpon>utcLogon.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Elite Captain Black.ico" />
+    <Content Include="Resources\AddTab.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\ComNo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Company.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Customers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Employee.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\IconDep\Circle_Orange.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\ImportOrder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Incon-Soft\archives.png" />
+    <Content Include="Icons\Incon-Soft\bestseller.png" />
+    <Content Include="Icons\Incon-Soft\business-contact.png" />
+    <Content Include="Icons\Incon-Soft\changeproduct.png" />
+    <Content Include="Icons\Incon-Soft\collaboration.png" />
+    <Content Include="Icons\Incon-Soft\communication %282%29.png" />
+    <Content Include="Icons\Incon-Soft\communication.png" />
+    <Content Include="Icons\Incon-Soft\ComNo.png" />
+    <Content Include="Icons\Incon-Soft\Company.png" />
+    <Content Include="Icons\Incon-Soft\CompanyList.png" />
+    <Content Include="Icons\Incon-Soft\credit.png" />
+    <Content Include="Icons\Incon-Soft\current-work.png" />
+    <Content Include="Icons\Incon-Soft\customers %282%29.png" />
+    <Content Include="Icons\Incon-Soft\customers %283%29.png" />
+    <Content Include="Icons\Incon-Soft\Customers.png" />
+    <Content Include="Icons\Incon-Soft\delicious.png" />
+    <Content Include="Icons\Incon-Soft\delivery.png" />
+    <Content Include="Icons\Incon-Soft\disk.png" />
+    <Content Include="Icons\Incon-Soft\doc_convert.png" />
+    <Content Include="Icons\Incon-Soft\doc_excel_table.png" />
+    <Content Include="Icons\Incon-Soft\Download.ico" />
+    <Content Include="Icons\Incon-Soft\Export.ico" />
+    <Content Include="Icons\Incon-Soft\Home.ico" />
+    <Content Include="Icons\Incon-Soft\ImportOrder.png" />
+    <Content Include="Icons\Incon-Soft\invoice %282%29.png" />
+    <Content Include="Icons\Incon-Soft\invoice.png" />
+    <Content Include="Icons\Incon-Soft\issue.png" />
+    <Content Include="Icons\Incon-Soft\Liabilities.png" />
+    <Content Include="Icons\Incon-Soft\Order.png" />
+    <Content Include="Icons\Incon-Soft\Package.ico" />
+    <Content Include="Icons\Incon-Soft\Package.png" />
+    <Content Include="Icons\Incon-Soft\plus.png" />
+    <Content Include="Icons\Incon-Soft\printer%283%29.png" />
+    <Content Include="Icons\Incon-Soft\print_icon.gif" />
+    <Content Include="Icons\Incon-Soft\process %282%29.png" />
+    <Content Include="Icons\Incon-Soft\process.png" />
+    <Content Include="Icons\Incon-Soft\Product.png" />
+    <Content Include="Icons\Incon-Soft\Promotion.png" />
+    <Content Include="Icons\Incon-Soft\refresh %282%29.png" />
+    <Content Include="Icons\Incon-Soft\Refresh.ico" />
+    <Content Include="Icons\Incon-Soft\refresh.png" />
+    <Content Include="Icons\Incon-Soft\SalariesReport.png" />
+    <Content Include="Icons\Incon-Soft\save_16.png" />
+    <Content Include="Icons\Incon-Soft\Search.ico" />
+    <Content Include="Icons\Incon-Soft\shipping %282%29.png" />
+    <Content Include="Icons\Incon-Soft\shipping %283%29.png" />
+    <Content Include="Icons\Incon-Soft\shipping.png" />
+    <Content Include="Icons\Incon-Soft\ShippingOrder.png" />
+    <Content Include="Icons\Incon-Soft\sign-out.png" />
+    <Content Include="Icons\Incon-Soft\statistics.png" />
+    <Content Include="Icons\Incon-Soft\Stop.ico" />
+    <Content Include="Icons\Incon-Soft\suppliers.png" />
+    <Content Include="Icons\Incon-Soft\Temporary.ico" />
+    <Content Include="Icons\Incon-Soft\ticket.png" />
+    <Content Include="Icons\Incon-Soft\Unit.ico" />
+    <Content Include="Icons\Incon-Soft\up_16.png" />
+    <Content Include="Icons\Liabilities.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Order.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Product.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Promotion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Report.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\SalariesReport.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Unit.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\User.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Icons\IconDep\Thumbs.db" />
+    <None Include="Icons\Thumbs.db" />
+    <None Include="Resources\lock blue.png" />
+    <None Include="TempImport\Import %25 Tinh Luong.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TempImport\Them Khach Hang.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TempImport\THEM SP.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
